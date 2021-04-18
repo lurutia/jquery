@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>털 많은 친구 캠페인</title>
+		<link rel="stylesheet" type="text/css" href="styles/my_style.css">
+	</head>
+	<body>
+		<div id="clickMe">오늘의 털 많은 친구를 보여 주세요</div>
+		<div id="picframe">
+			<img src="images/furry_friend.jpg">
+		</div>
+		<script src="../../lib/jquery-1.6.4.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#clickMe").click(function() {
+					$("img").fadeIn(1000);
+					$("#picframe").slideToggle("slow");
+				});
+			})
+		</script>
+	</body>
+</html>
